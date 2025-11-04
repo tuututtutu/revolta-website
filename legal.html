@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>REVOLTA RP — Légal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{--accent:#00c8ff;--bg:#000;--muted:#9fb3d1}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Poppins,system-ui,Arial;background:var(--bg);color:#e7f5ff}
+
+/* header */
+header{position:fixed;left:0;right:0;top:12px;display:flex;justify-content:space-between;align-items:center;padding:12px 24px;z-index:100;background:linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,.06));backdrop-filter:blur(8px);border-radius:10px;margin:0 16px}
+.logo {display:flex;align-items:center;gap:10px;color:var(--accent);font-weight:800}
+.logo img{width:44px;height:44px;border-radius:8px;object-fit:cover}
+nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:.18s}
+nav a:hover{color:var(--accent);background:rgba(0,200,255,0.04)}
+nav a.active{color:var(--accent);background:rgba(0,200,255,0.06)}
+
+/* hero */
+.hero{padding-top:120px;text-align:center;padding-bottom:20px}
+.hero h1{color:var(--accent);font-size:40px;margin-bottom:6px}
+.hero p{color:var(--muted)}
+
+/* content */
+.container{max-width:1000px;margin:20px auto;padding:22px;background:rgba(255,255,255,0.01);border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter:blur(6px)}
+.container h2{color:var(--accent);margin-top:26px;border-bottom:1px solid rgba(255,255,255,0.04);padding-bottom:8px}
+.container ul{margin-top:12px;padding-left:18px;line-height:1.8;color:#dbefff}
+.container li{margin:8px 0}
+
+/* badge */
+.tag{display:inline-block;padding:4px 8px;border-radius:6px;font-weight:700;margin-right:8px;font-size:13px}
+.tag.blue{background:#009dff22;color:#00c8ff}
+.tag.green{background:#00ff9033;color:#05ff9b}
+.tag.red{background:#ff4b4b22;color:#ff6b6b}
+
+/* back */
+.back{display:inline-block;margin-top:20px;padding:10px 18px;border-radius:8px;border:2px solid rgba(0,200,255,0.14);color:var(--accent);text-decoration:none}
+.back:hover{background:var(--accent);color:#001214}
+
+/* footer */
+.footer{margin-top:40px;text-align:center;padding:22px;color:var(--muted);font-size:14px}
+
+@media(max-width:720px){.container{margin:100px 12px;padding:18px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="assets/img/revolta-logo.png" alt="logo"> REVOLTA RP</div>
+  <nav>
+    <a href="rp.html">Accueil</a>
+    <a href="legal.html" class="active">Légal</a>
+    <a href="illegal.html">Illégal</a>
+    <a href="https://discord.com/invite/NSpPvJMQdd" target="_blank">Discord</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>⚖️ Règles — Zone Légale</h1>
+    <p>Tout ce qui concerne le RP légal : LSPD, EMS, Gouvernement, Justice, Sécurité…</p>
+  </section>
+
+  <div class="container">
+
+    <h2>Comportement & Discipline</h2>
+    <ul>
+      <li>Respect absolu des procédures et hiérarchie.</li>
+      <li>Utilisation du <span class="tag blue">Fear RP</span> en toutes circonstances.</li>
+      <li>Interdiction de corruption (<span class="tag red">sanction permanente</span>).</li>
+    </ul>
+
+    <h2>Police (LSPD)</h2>
+    <ul>
+      <li>Arrestations et fouilles uniquement avec <span class="tag blue">motif RP</span>.</li>
+      <li>Usage des armes proportionné.</li>
+      <li>Tazer privilégié avant tir létal.</li>
+      <li>Garde-à-vue maximum : <span class="tag blue">20 minutes</span>.</li>
+      <li>Interdiction de tirer sans sommation (hors danger immédiat).</li>
+    </ul>
+    
+    <h2>EMS / Médecins</h2>
+    <ul>
+      <li>Respect du serment médical.</li>
+      <li>Interdiction de loot les victimes.</li>
+      <li>Priorité à la sécurité — pas d'intervention en zone active.</li>
+      <li>PAS de revive abusif / favoritisme.</li>
+    </ul>
+
+    <h2>Gouvernement / Justice</h2>
+    <ul>
+      <li>Aucune décision arbitraire.</li>
+      <li>Respect de la loi & procédures judiciaires.</li>
+      <li>Affaires traitées avec preuves.</li>
+      <li>Corruption = <span class="tag blue">ban définitif RP</span>.</li>
+    </ul>
+
+    <h2>Entreprises légales</h2>
+    <ul>
+      <li>Tenue correcte requise.</li>
+      <li>Prestations RP uniquement — pas d’arnaques.</li>
+      <li>Concurrence loyale, pas de sabotage.</li>
+      <li>Managers responsables du personnel.</li>
+    </ul>
+
+    <div style="text-align:center;margin-top:18px">
+      <a class="back" href="rp.html">⬅️ Retour</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2025 REVOLTA RP — <a href="https://discord.com/invite/NSpPvJMQdd" target="_blank" style="color:var(--accent)">Discord</a>
+  </footer>
+</main>
+
+</body>
+</html>
